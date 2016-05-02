@@ -7,7 +7,7 @@ using CameraBuddy;
 using GameTimer;
 using CollisionBuddy;
 using HadoukInput;
-using BasicPrimitiveBuddy;
+using PrimitiveBuddy;
 
 namespace CameraBuddySample
 {
@@ -27,6 +27,7 @@ namespace CameraBuddySample
 		GameClock _clock;
 
 		InputState _inputState;
+		ControllerWrapper _controller;
 		InputWrapper _inputWrapper;
 
 		/// <summary>
@@ -49,8 +50,8 @@ namespace CameraBuddySample
 
 			_clock = new GameClock();
 			_inputState = new InputState();
-			_inputWrapper = new InputWrapper(PlayerIndex.One, _clock.GetCurrentTime);
-			_inputWrapper.Controller.UseKeyboard = true;
+			_controller = new ControllerWrapper(PlayerIndex.One, true);
+			_inputWrapper = new InputWrapper(_controller, _clock.GetCurrentTime);
 
 			//set up the camera
 			_camera = new Camera();
@@ -66,7 +67,7 @@ namespace CameraBuddySample
 		protected override void Initialize()
 		{
 			//init the blue circle so it will be on the left of the screen
-			_circle1.Initialize(new Vector2(graphics.GraphicsDevice.Viewport.TitleSafeArea.Center.X - 300,
+			_circle1.Initialize(new Vector2(graphics.GraphicsDevice.Viewport.TitleSafeArea.Center.X - 80,
 			                                graphics.GraphicsDevice.Viewport.TitleSafeArea.Center.Y), 80.0f);
 
 			//put the red circle on the right of the screen
@@ -87,7 +88,7 @@ namespace CameraBuddySample
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
 			//Setup all the rectangles used by the camera
-			_camera.SetScreenRects(graphics.GraphicsDevice.Viewport.Bounds, graphics.GraphicsDevice.Viewport.TitleSafeArea);
+			//_camera.SetScreenRects(graphics.GraphicsDevice.Viewport.Bounds, graphics.GraphicsDevice.Viewport.TitleSafeArea);
 		}
 
 		/// <summary>
@@ -115,27 +116,27 @@ namespace CameraBuddySample
 			float movespeed = 1600.0f;
 
 			//check veritcal movement
-			if (_inputWrapper.Controller.KeystrokeHeld[(int)EKeystroke.Up])
+			if (_inputWrapper.Controller.CheckKeystrokeHeld(EKeystroke.Up))
 			{
 				_circle1.Translate(0.0f, -movespeed * _clock.TimeDelta);
 			}
-			else if (_inputWrapper.Controller.KeystrokeHeld[(int)EKeystroke.Down])
+			else if (_inputWrapper.Controller.CheckKeystrokeHeld(EKeystroke.Down))
 			{
 				_circle1.Translate(0.0f, movespeed * _clock.TimeDelta);
 			}
 
 			//check horizontal movement
-			if (_inputWrapper.Controller.KeystrokeHeld[(int)EKeystroke.Forward])
+			if (_inputWrapper.Controller.CheckKeystrokeHeld(EKeystroke.Forward))
 			{
 				_circle1.Translate(movespeed * _clock.TimeDelta, 0.0f);
 			}
-			else if (_inputWrapper.Controller.KeystrokeHeld[(int)EKeystroke.Back])
+			else if (_inputWrapper.Controller.CheckKeystrokeHeld(EKeystroke.Back))
 			{
 				_circle1.Translate(-movespeed * _clock.TimeDelta, 0.0f);
 			}
 
 			//add camera shake?
-			if (_inputWrapper.Controller.KeystrokePress[(int)EKeystroke.A])
+			if (_inputWrapper.Controller.CheckKeystroke(EKeystroke.A))
 			{
 				_camera.AddCameraShake(0.5f);
 			}
@@ -168,12 +169,11 @@ namespace CameraBuddySample
 				_camera.TranslationMatrix);
 
 			//draw the players circle in green
-			BasicPrimitive circlePrim = new BasicPrimitive(graphics.GraphicsDevice);
-			circlePrim.Circle(_circle1.Pos, _circle1.Radius, Color.Green, spriteBatch);
+			var circlePrim = new Primitive(graphics.GraphicsDevice, spriteBatch);
+			circlePrim.Circle(_circle1.Pos, _circle1.Radius, Color.Green);
 
 			//draw the stationary circle in red
-			circlePrim = new BasicPrimitive(graphics.GraphicsDevice);
-			circlePrim.Circle(_circle2.Pos, _circle2.Radius, Color.Red, spriteBatch);
+			circlePrim.Circle(_circle2.Pos, _circle2.Radius, Color.Red);
 
 			spriteBatch.End();
 
