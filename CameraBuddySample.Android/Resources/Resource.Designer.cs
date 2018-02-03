@@ -34,6 +34,8 @@ namespace CameraBuddySample.Android
 			global::FilenameBuddy.Android.Resource.String.Hello = global::CameraBuddySample.Android.Resource.String.Hello;
 			global::GameTimer.Android.Resource.String.ApplicationName = global::CameraBuddySample.Android.Resource.String.ApplicationName;
 			global::GameTimer.Android.Resource.String.Hello = global::CameraBuddySample.Android.Resource.String.Hello;
+			global::HadoukInput.Android.Resource.String.ApplicationName = global::CameraBuddySample.Android.Resource.String.ApplicationName;
+			global::HadoukInput.Android.Resource.String.Hello = global::CameraBuddySample.Android.Resource.String.Hello;
 			global::MatrixExtensions.Android.Resource.String.ApplicationName = global::CameraBuddySample.Android.Resource.String.ApplicationName;
 			global::MatrixExtensions.Android.Resource.String.Hello = global::CameraBuddySample.Android.Resource.String.Hello;
 			global::PrimitiveBuddy.Android.Resource.String.ApplicationName = global::CameraBuddySample.Android.Resource.String.ApplicationName;
@@ -44,6 +46,8 @@ namespace CameraBuddySample.Android
 			global::ResolutionBuddy.Android.Resource.String.Hello = global::CameraBuddySample.Android.Resource.String.Hello;
 			global::Vector2Extensions.Android.Resource.String.ApplicationName = global::CameraBuddySample.Android.Resource.String.ApplicationName;
 			global::Vector2Extensions.Android.Resource.String.Hello = global::CameraBuddySample.Android.Resource.String.Hello;
+			global::XmlBuddy.Android.Resource.String.ApplicationName = global::CameraBuddySample.Android.Resource.String.ApplicationName;
+			global::XmlBuddy.Android.Resource.String.Hello = global::CameraBuddySample.Android.Resource.String.Hello;
 		}
 		
 		public partial class Attribute

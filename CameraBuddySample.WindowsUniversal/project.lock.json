@@ -1,8 +1,8 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
-    "UAP,Version=v10.0": {
-      "CameraBuddy/1.0.2": {
+    "UAP,Version=v10.0.10586": {
+      "CameraBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -20,7 +20,7 @@
           "lib/uap10.0/CameraBuddy.WindowsUniversal.dll": {}
         }
       },
-      "CollisionBuddy/1.0.3": {
+      "CollisionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -36,7 +36,7 @@
           "lib/uap10.0/CollisionBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FilenameBuddy/1.0.3": {
+      "FilenameBuddy/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -48,7 +48,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "GameTimer/1.0.2": {
+      "GameTimer/1.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -64,7 +64,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.4": {
+      "HadoukInput/1.0.7": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -82,7 +82,7 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.2": {
+      "MatrixExtensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -382,16 +382,28 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
+      "MonoGame.Framework.WindowsUniversal/3.6.0.1625": {
         "type": "package",
         "compile": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         },
         "runtime": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         }
       },
-      "PrimitiveBuddy/1.0.3": {
+      "PrimitiveBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -410,7 +422,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.3": {
+      "RandomExtensions.dmanning23/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -422,7 +434,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.8": {
+      "ResolutionBuddy/1.0.16": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -2344,7 +2356,7 @@
           }
         }
       },
-      "Vector2Extensions/1.0.8": {
+      "Vector2Extensions/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -2361,7 +2373,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.14": {
+      "XmlBuddy/1.0.19": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -2378,8 +2390,8 @@
         }
       }
     },
-    "UAP,Version=v10.0/win10-arm": {
-      "CameraBuddy/1.0.2": {
+    "UAP,Version=v10.0.10586/win10-arm": {
+      "CameraBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -2397,7 +2409,7 @@
           "lib/uap10.0/CameraBuddy.WindowsUniversal.dll": {}
         }
       },
-      "CollisionBuddy/1.0.3": {
+      "CollisionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -2413,7 +2425,7 @@
           "lib/uap10.0/CollisionBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FilenameBuddy/1.0.3": {
+      "FilenameBuddy/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -2425,7 +2437,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "GameTimer/1.0.2": {
+      "GameTimer/1.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -2441,7 +2453,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.4": {
+      "HadoukInput/1.0.7": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -2459,7 +2471,7 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.2": {
+      "MatrixExtensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -2707,16 +2719,28 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
+      "MonoGame.Framework.WindowsUniversal/3.6.0.1625": {
         "type": "package",
         "compile": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         },
         "runtime": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         }
       },
-      "PrimitiveBuddy/1.0.3": {
+      "PrimitiveBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -2735,7 +2759,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.3": {
+      "RandomExtensions.dmanning23/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -2747,7 +2771,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.8": {
+      "ResolutionBuddy/1.0.16": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -4831,7 +4855,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Vector2Extensions/1.0.8": {
+      "Vector2Extensions/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -4848,7 +4872,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.14": {
+      "XmlBuddy/1.0.19": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -4865,8 +4889,8 @@
         }
       }
     },
-    "UAP,Version=v10.0/win10-arm-aot": {
-      "CameraBuddy/1.0.2": {
+    "UAP,Version=v10.0.10586/win10-arm-aot": {
+      "CameraBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -4884,7 +4908,7 @@
           "lib/uap10.0/CameraBuddy.WindowsUniversal.dll": {}
         }
       },
-      "CollisionBuddy/1.0.3": {
+      "CollisionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -4900,7 +4924,7 @@
           "lib/uap10.0/CollisionBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FilenameBuddy/1.0.3": {
+      "FilenameBuddy/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -4912,7 +4936,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "GameTimer/1.0.2": {
+      "GameTimer/1.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -4928,7 +4952,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.4": {
+      "HadoukInput/1.0.7": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -4946,7 +4970,7 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.2": {
+      "MatrixExtensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -5195,16 +5219,28 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
+      "MonoGame.Framework.WindowsUniversal/3.6.0.1625": {
         "type": "package",
         "compile": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         },
         "runtime": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         }
       },
-      "PrimitiveBuddy/1.0.3": {
+      "PrimitiveBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -5223,7 +5259,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.3": {
+      "RandomExtensions.dmanning23/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -5235,7 +5271,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.8": {
+      "ResolutionBuddy/1.0.16": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -5597,9 +5633,6 @@
       },
       "runtime.win10-arm-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
-        "compile": {
-          "runtimes/win10-arm-aot/lib/netcore50/_._": {}
-        },
         "runtime": {
           "runtimes/win10-arm-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -7357,7 +7390,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Vector2Extensions/1.0.8": {
+      "Vector2Extensions/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -7374,7 +7407,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.14": {
+      "XmlBuddy/1.0.19": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -7391,8 +7424,8 @@
         }
       }
     },
-    "UAP,Version=v10.0/win10-x64": {
-      "CameraBuddy/1.0.2": {
+    "UAP,Version=v10.0.10586/win10-x64": {
+      "CameraBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -7410,7 +7443,7 @@
           "lib/uap10.0/CameraBuddy.WindowsUniversal.dll": {}
         }
       },
-      "CollisionBuddy/1.0.3": {
+      "CollisionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -7426,7 +7459,7 @@
           "lib/uap10.0/CollisionBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FilenameBuddy/1.0.3": {
+      "FilenameBuddy/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -7438,7 +7471,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "GameTimer/1.0.2": {
+      "GameTimer/1.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -7454,7 +7487,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.4": {
+      "HadoukInput/1.0.7": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -7472,7 +7505,7 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.2": {
+      "MatrixExtensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -7723,16 +7756,28 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
+      "MonoGame.Framework.WindowsUniversal/3.6.0.1625": {
         "type": "package",
         "compile": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         },
         "runtime": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         }
       },
-      "PrimitiveBuddy/1.0.3": {
+      "PrimitiveBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -7751,7 +7796,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.3": {
+      "RandomExtensions.dmanning23/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -7763,7 +7808,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.8": {
+      "ResolutionBuddy/1.0.16": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -9853,7 +9898,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Vector2Extensions/1.0.8": {
+      "Vector2Extensions/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -9870,7 +9915,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.14": {
+      "XmlBuddy/1.0.19": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -9887,8 +9932,8 @@
         }
       }
     },
-    "UAP,Version=v10.0/win10-x64-aot": {
-      "CameraBuddy/1.0.2": {
+    "UAP,Version=v10.0.10586/win10-x64-aot": {
+      "CameraBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -9906,7 +9951,7 @@
           "lib/uap10.0/CameraBuddy.WindowsUniversal.dll": {}
         }
       },
-      "CollisionBuddy/1.0.3": {
+      "CollisionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -9922,7 +9967,7 @@
           "lib/uap10.0/CollisionBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FilenameBuddy/1.0.3": {
+      "FilenameBuddy/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -9934,7 +9979,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "GameTimer/1.0.2": {
+      "GameTimer/1.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -9950,7 +9995,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.4": {
+      "HadoukInput/1.0.7": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -9968,7 +10013,7 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.2": {
+      "MatrixExtensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -10220,16 +10265,28 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
+      "MonoGame.Framework.WindowsUniversal/3.6.0.1625": {
         "type": "package",
         "compile": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         },
         "runtime": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         }
       },
-      "PrimitiveBuddy/1.0.3": {
+      "PrimitiveBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -10248,7 +10305,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.3": {
+      "RandomExtensions.dmanning23/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -10260,7 +10317,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.8": {
+      "ResolutionBuddy/1.0.16": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -10622,9 +10679,6 @@
       },
       "runtime.win10-x64-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
-        "compile": {
-          "runtimes/win10-x64-aot/lib/netcore50/_._": {}
-        },
         "runtime": {
           "runtimes/win10-x64-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -12388,7 +12442,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Vector2Extensions/1.0.8": {
+      "Vector2Extensions/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -12405,7 +12459,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.14": {
+      "XmlBuddy/1.0.19": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -12422,8 +12476,8 @@
         }
       }
     },
-    "UAP,Version=v10.0/win10-x86": {
-      "CameraBuddy/1.0.2": {
+    "UAP,Version=v10.0.10586/win10-x86": {
+      "CameraBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -12441,7 +12495,7 @@
           "lib/uap10.0/CameraBuddy.WindowsUniversal.dll": {}
         }
       },
-      "CollisionBuddy/1.0.3": {
+      "CollisionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -12457,7 +12511,7 @@
           "lib/uap10.0/CollisionBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FilenameBuddy/1.0.3": {
+      "FilenameBuddy/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -12469,7 +12523,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "GameTimer/1.0.2": {
+      "GameTimer/1.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -12485,7 +12539,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.4": {
+      "HadoukInput/1.0.7": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -12503,7 +12557,7 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.2": {
+      "MatrixExtensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -12754,16 +12808,28 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
+      "MonoGame.Framework.WindowsUniversal/3.6.0.1625": {
         "type": "package",
         "compile": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         },
         "runtime": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         }
       },
-      "PrimitiveBuddy/1.0.3": {
+      "PrimitiveBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -12782,7 +12848,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.3": {
+      "RandomExtensions.dmanning23/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -12794,7 +12860,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.8": {
+      "ResolutionBuddy/1.0.16": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -14884,7 +14950,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Vector2Extensions/1.0.8": {
+      "Vector2Extensions/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -14901,7 +14967,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.14": {
+      "XmlBuddy/1.0.19": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -14918,8 +14984,8 @@
         }
       }
     },
-    "UAP,Version=v10.0/win10-x86-aot": {
-      "CameraBuddy/1.0.2": {
+    "UAP,Version=v10.0.10586/win10-x86-aot": {
+      "CameraBuddy/1.0.6": {
         "type": "package",
         "dependencies": {
           "GameTimer": "1.0.0",
@@ -14937,7 +15003,7 @@
           "lib/uap10.0/CameraBuddy.WindowsUniversal.dll": {}
         }
       },
-      "CollisionBuddy/1.0.3": {
+      "CollisionBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -14953,7 +15019,7 @@
           "lib/uap10.0/CollisionBuddy.WindowsUniversal.dll": {}
         }
       },
-      "FilenameBuddy/1.0.3": {
+      "FilenameBuddy/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -14965,7 +15031,7 @@
           "lib/uap10.0/FilenameBuddy.WindowsUniversal.dll": {}
         }
       },
-      "GameTimer/1.0.2": {
+      "GameTimer/1.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -14981,7 +15047,7 @@
           "lib/uap10.0/GameTimer.WindowsUniversal.dll": {}
         }
       },
-      "HadoukInput/1.0.4": {
+      "HadoukInput/1.0.7": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -14999,7 +15065,7 @@
           "lib/uap10.0/HadoukInput.WindowsUniversal.dll": {}
         }
       },
-      "MatrixExtensions/1.0.2": {
+      "MatrixExtensions/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -15251,16 +15317,28 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
+      "MonoGame.Framework.WindowsUniversal/3.6.0.1625": {
         "type": "package",
         "compile": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         },
         "runtime": {
-          "lib/netcore/MonoGame.Framework.dll": {}
+          "lib/netcore/MonoGame.Framework.dll": {},
+          "lib/netcore/SharpDX.DXGI.dll": {},
+          "lib/netcore/SharpDX.Direct2D1.dll": {},
+          "lib/netcore/SharpDX.Direct3D11.dll": {},
+          "lib/netcore/SharpDX.MediaFoundation.dll": {},
+          "lib/netcore/SharpDX.XAudio2.dll": {},
+          "lib/netcore/SharpDX.dll": {}
         }
       },
-      "PrimitiveBuddy/1.0.3": {
+      "PrimitiveBuddy/1.0.4": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -15279,7 +15357,7 @@
           "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll": {}
         }
       },
-      "RandomExtensions.dmanning23/1.0.3": {
+      "RandomExtensions.dmanning23/1.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0"
@@ -15291,7 +15369,7 @@
           "lib/uap10.0/RandomExtensions.WindowsUniversal.dll": {}
         }
       },
-      "ResolutionBuddy/1.0.8": {
+      "ResolutionBuddy/1.0.16": {
         "type": "package",
         "dependencies": {
           "MatrixExtensions": "1.0.0",
@@ -15653,9 +15731,6 @@
       },
       "runtime.win10-x86-aot.runtime.native.System.IO.Compression/4.0.1": {
         "type": "package",
-        "compile": {
-          "runtimes/win10-x86-aot/lib/netcore50/_._": {}
-        },
         "runtime": {
           "runtimes/win10-x86-aot/lib/netcore50/clrcompression.dll": {}
         }
@@ -17419,7 +17494,7 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Vector2Extensions/1.0.8": {
+      "Vector2Extensions/1.0.9": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.UniversalWindowsPlatform": "5.1.0",
@@ -17436,7 +17511,7 @@
           "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll": {}
         }
       },
-      "XmlBuddy/1.0.14": {
+      "XmlBuddy/1.0.19": {
         "type": "package",
         "dependencies": {
           "FilenameBuddy": "1.0.1",
@@ -17455,47 +17530,47 @@
     }
   },
   "libraries": {
-    "CameraBuddy/1.0.2": {
-      "sha512": "Q1aECEjNHAnbMED6g//HRqHmdiqMWahIceoT1VGhZ6dSp16O9iINl0a9DJ+CTDKraQiw3qIbxEtJkC0Y8GwiAA==",
+    "CameraBuddy/1.0.6": {
+      "sha512": "nI+c7vmUYlfrRo0O+agVDKs968Z2JZLbAOCnND+KYHWHjgWj7/QRWajiiaos4NUdCkhgoyEfFnG9MuFW76KKBA==",
       "type": "package",
-      "path": "camerabuddy/1.0.2",
+      "path": "camerabuddy/1.0.6",
       "files": [
-        "camerabuddy.1.0.2.nupkg.sha512",
+        "camerabuddy.1.0.6.nupkg.sha512",
         "camerabuddy.nuspec",
         "lib/MonoAndroid10/CameraBuddy.Android.dll",
         "lib/MonoAndroid10/CameraBuddy.Android.pdb",
         "lib/Xamarin.iOS10/CameraBuddy.iOS.dll",
         "lib/Xamarin.iOS10/CameraBuddy.iOS.pdb",
-        "lib/net451/CameraBuddy.DesktopGL.dll",
-        "lib/net451/CameraBuddy.DesktopGL.pdb",
+        "lib/net451/CameraBuddy.WindowsDX.dll",
+        "lib/net451/CameraBuddy.WindowsDX.pdb",
         "lib/uap10.0/CameraBuddy.WindowsUniversal.dll",
         "lib/uap10.0/CameraBuddy.WindowsUniversal.pdb"
       ]
     },
-    "CollisionBuddy/1.0.3": {
-      "sha512": "GAA0MayvotB/GTu3faLlTFdjFuru7VyJ7h8RZGx6lmgzLYr4VF9hzpELLef25bCZTJQkL6qyKKZUuOQ1fYX73Q==",
+    "CollisionBuddy/1.0.4": {
+      "sha512": "5hhvQIiOXrIrA9Q3IuxOOU1aytvyZr1417Ie+2l19c02TmoKGD1vxkHTJIW2T0Bm6whQZTP4GVb0bL3YHY8XOA==",
       "type": "package",
-      "path": "collisionbuddy/1.0.3",
+      "path": "collisionbuddy/1.0.4",
       "files": [
-        "collisionbuddy.1.0.3.nupkg.sha512",
+        "collisionbuddy.1.0.4.nupkg.sha512",
         "collisionbuddy.nuspec",
         "lib/MonoAndroid10/CollisionBuddy.Android.dll",
         "lib/MonoAndroid10/CollisionBuddy.Android.pdb",
         "lib/Xamarin.iOS10/CollisionBuddy.iOS.dll",
         "lib/Xamarin.iOS10/CollisionBuddy.iOS.pdb",
-        "lib/net451/CollisionBuddy.DesktopGL.dll",
-        "lib/net451/CollisionBuddy.DesktopGL.pdb",
+        "lib/net451/CollisionBuddy.WindowsDX.dll",
+        "lib/net451/CollisionBuddy.WindowsDX.pdb",
         "lib/uap10.0/CollisionBuddy.WindowsUniversal.dll",
         "lib/uap10.0/CollisionBuddy.WindowsUniversal.pdb"
       ]
     },
-    "FilenameBuddy/1.0.3": {
-      "sha512": "1tFJley50a9gEVyNDKHkNt9PVbfkfXbhf4P3OCmJVntUVmTzffpjhWKPyANfRJHi9Qd5vmLe+cjg8hOSnDjOhA==",
+    "FilenameBuddy/1.0.9": {
+      "sha512": "rYFckg/MWw5XX9BFrr6rMiPqxu5wxH4/sE7iB9v6ONVYSsLw8XUZRZ97wYT8ogJxFPylCNitnGyXOFwWxWBTlw==",
       "type": "package",
-      "path": "filenamebuddy/1.0.3",
+      "path": "filenamebuddy/1.0.9",
       "files": [
-        "filenamebuddy.1.0.3.nupkg.sha512",
-        "filenamebuddy.nuspec",
+        "FilenameBuddy.1.0.9.nupkg.sha512",
+        "FilenameBuddy.nuspec",
         "lib/MonoAndroid10/FilenameBuddy.Android.dll",
         "lib/MonoAndroid10/FilenameBuddy.Android.pdb",
         "lib/Xamarin.iOS10/FilenameBuddy.iOS.dll",
@@ -17506,54 +17581,54 @@
         "lib/uap10.0/FilenameBuddy.WindowsUniversal.pdb"
       ]
     },
-    "GameTimer/1.0.2": {
-      "sha512": "rIQm4rYjC0Akxki54vttmzYl5jSMQrppVtup56SX5lubXQqX/sqEHx/SvkIrqZfbXBZh+OjqsA44dbJisechoQ==",
+    "GameTimer/1.0.7": {
+      "sha512": "UYo0LYQ5lS6m+6lhpLgNySnZdusjMG/gue6ULsZ2+LnSu1neltFKcnmPOABBdBSAxIX7FXp9BhAg7KFZzIvtoQ==",
       "type": "package",
-      "path": "gametimer/1.0.2",
+      "path": "gametimer/1.0.7",
       "files": [
-        "gametimer.1.0.2.nupkg.sha512",
+        "gametimer.1.0.7.nupkg.sha512",
         "gametimer.nuspec",
         "lib/MonoAndroid10/GameTimer.Android.dll",
         "lib/MonoAndroid10/GameTimer.Android.pdb",
         "lib/Xamarin.iOS10/GameTimer.iOS.dll",
         "lib/Xamarin.iOS10/GameTimer.iOS.pdb",
-        "lib/net452/GameTimer.DesktopGL.dll",
-        "lib/net452/GameTimer.DesktopGL.pdb",
+        "lib/net452/GameTimer.WindowsDX.dll",
+        "lib/net452/GameTimer.WindowsDX.pdb",
         "lib/uap10.0/GameTimer.WindowsUniversal.dll",
         "lib/uap10.0/GameTimer.WindowsUniversal.pdb"
       ]
     },
-    "HadoukInput/1.0.4": {
-      "sha512": "xzqBGw/mD/fyz9sAI4MYoOApLzFO+WpWgSsbsHftc5PGqq6c2PENpxUQ8iSNjB2RD8hnii0LyJ4ymtG7ka6JkA==",
+    "HadoukInput/1.0.7": {
+      "sha512": "28CJFWJwcvfKjgPRjytkLbeBi6pQ5pbwc0zjvq1HJmg4uKs6gUKqN9kpMo4mYEbkzTIh+Wb7tNfBWx/aOg/WtA==",
       "type": "package",
-      "path": "hadoukinput/1.0.4",
+      "path": "hadoukinput/1.0.7",
       "files": [
-        "hadoukinput.1.0.4.nupkg.sha512",
+        "hadoukinput.1.0.7.nupkg.sha512",
         "hadoukinput.nuspec",
         "lib/MonoAndroid10/HadoukInput.Android.dll",
         "lib/MonoAndroid10/HadoukInput.Android.pdb",
         "lib/Xamarin.iOS10/HadoukInput.iOS.dll",
         "lib/Xamarin.iOS10/HadoukInput.iOS.pdb",
-        "lib/net451/HadoukInput.DesktopGL.dll",
-        "lib/net451/HadoukInput.DesktopGL.pdb",
+        "lib/net451/HadoukInput.WindowsDX.dll",
+        "lib/net451/HadoukInput.WindowsDX.pdb",
         "lib/uap10.0/HadoukInput.WindowsUniversal.dll",
         "lib/uap10.0/HadoukInput.WindowsUniversal.pdb"
       ]
     },
-    "MatrixExtensions/1.0.2": {
-      "sha512": "ii4QIV9JBrLO678c/QOs7PqR2oLh2MrkhX5CfeJ1WiA1AVZNRCX7PhF1uV0nNA9OFy/E8Jv4HN6I5xi+huQ0UA==",
+    "MatrixExtensions/1.0.3": {
+      "sha512": "Z9pY8b3fUWEmUdWkZ6NGvwE3wB+9Xl8+Mhllg64XXYiaeVM34L/dZt0edzbqyK//4QQ+jD0wG/tKvsRGO01EPA==",
       "type": "package",
-      "path": "matrixextensions/1.0.2",
+      "path": "matrixextensions/1.0.3",
       "files": [
         "lib/MonoAndroid10/MatrixExtensions.Android.dll",
         "lib/MonoAndroid10/MatrixExtensions.Android.pdb",
         "lib/Xamarin.iOS10/MatrixExtensions.iOS.dll",
         "lib/Xamarin.iOS10/MatrixExtensions.iOS.pdb",
-        "lib/net451/MatrixExtensions.DesktopGL.dll",
-        "lib/net451/MatrixExtensions.DesktopGL.pdb",
+        "lib/net451/MatrixExtensions.WindowsDX.dll",
+        "lib/net451/MatrixExtensions.WindowsDX.pdb",
         "lib/uap10.0/MatrixExtensions.WindowsUniversal.dll",
         "lib/uap10.0/MatrixExtensions.WindowsUniversal.pdb",
-        "matrixextensions.1.0.2.nupkg.sha512",
+        "matrixextensions.1.0.3.nupkg.sha512",
         "matrixextensions.nuspec"
       ]
     },
@@ -17758,14 +17833,14 @@
       ]
     },
     "Microsoft.NETCore.UniversalWindowsPlatform/5.2.2": {
-      "sha512": "9UHv2YObWmcF8gqtBoDC4UW5gdHzFRtaZ5KtB9QKvCy+NC9LH1DMYyOI/ltupjVZlwYEulj3msjBXys9/QI6nw==",
+      "sha512": "eHccUiYTkiY8xeixRA0DV9mcFpi9GA9UzKt3v0d6NtNGrGefhmqwnb60PSWQPe49tXbxZaP0x+W0ghvj6hflHg==",
       "type": "package",
       "path": "microsoft.netcore.universalwindowsplatform/5.2.2",
       "files": [
+        "Microsoft.NETCore.UniversalWindowsPlatform.5.2.2.nupkg.sha512",
+        "Microsoft.NETCore.UniversalWindowsPlatform.nuspec",
         "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "microsoft.netcore.universalwindowsplatform.5.2.2.nupkg.sha512",
-        "microsoft.netcore.universalwindowsplatform.nuspec"
+        "dotnet_library_license.txt"
       ]
     },
     "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
@@ -17859,11 +17934,12 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "MonoGame.Framework.WindowsUniversal/3.5.1.1679": {
-      "sha512": "ocVIHOGX1PA4HdvpI3/uKQVp6x1CPbmKvSdpk2bmpqHZ2PIOKqp5BjbkbOwKbZp8IdaLNbWQjG3Aonkezn2eBQ==",
+    "MonoGame.Framework.WindowsUniversal/3.6.0.1625": {
+      "sha512": "VtnQj60vkQkyX9+kZxq/9vtmE4+V/J4IP80KQjdzS0CIh01GWvwTLnUsk6pAJHHjgCvy46+SFMGgJiCySMO0GA==",
       "type": "package",
+      "path": "monogame.framework.windowsuniversal/3.6.0.1625",
       "files": [
-        "MonoGame.Framework.WindowsUniversal.3.5.1.1679.nupkg.sha512",
+        "MonoGame.Framework.WindowsUniversal.3.6.0.1625.nupkg.sha512",
         "MonoGame.Framework.WindowsUniversal.nuspec",
         "lib/netcore/MonoGame.Framework.dll",
         "lib/netcore/MonoGame.Framework.pri",
@@ -17879,28 +17955,30 @@
         "readme.txt"
       ]
     },
-    "PrimitiveBuddy/1.0.3": {
-      "sha512": "dBXcIvzE3zn/k2cEmZoSzh+HQyXlGyjFF24ljnOcKu9g5tQQbAw8636IWO7rNMOzEDj7h1fBGm4cPAt7pGkw+Q==",
+    "PrimitiveBuddy/1.0.4": {
+      "sha512": "ZtTucJiY/gXe1hkyMB+WqEK06/WQPLmbPxaO5JHMHc0l8IsRoxAz/4+/0Qz6aLebSsAtWxGyD+/P96Ar2HU2kg==",
       "type": "package",
-      "path": "primitivebuddy/1.0.3",
+      "path": "primitivebuddy/1.0.4",
       "files": [
         "lib/MonoAndroid10/PrimitiveBuddy.Android.dll",
         "lib/MonoAndroid10/PrimitiveBuddy.Android.pdb",
         "lib/Xamarin.iOS10/PrimitiveBuddy.iOS.dll",
         "lib/Xamarin.iOS10/PrimitiveBuddy.iOS.pdb",
-        "lib/net451/PrimitiveBuddy.DesktopGL.dll",
-        "lib/net451/PrimitiveBuddy.DesktopGL.pdb",
+        "lib/net451/PrimitiveBuddy.WindowsDX.dll",
+        "lib/net451/PrimitiveBuddy.WindowsDX.pdb",
         "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.dll",
         "lib/uap10.0/PrimitiveBuddy.WindowsUniversal.pdb",
-        "primitivebuddy.1.0.3.nupkg.sha512",
+        "primitivebuddy.1.0.4.nupkg.sha512",
         "primitivebuddy.nuspec"
       ]
     },
-    "RandomExtensions.dmanning23/1.0.3": {
-      "sha512": "+MIsF4UfLZPa/U/biR5SNTL5Ll3jNgPQVKwz1MB4bWCBoNGyYDwUmvc8qq8IEf4RpVXIl6jf/WAVw8Wn71FoKA==",
+    "RandomExtensions.dmanning23/1.0.4": {
+      "sha512": "44a8PFu6M4m6UBhO95NWnYYUwydcCtkiCx0uYqKigGCb0wwavTPy1M8Z/t5lW7DwVpjzHPezN2FgkdeudCwhvw==",
       "type": "package",
-      "path": "randomextensions.dmanning23/1.0.3",
+      "path": "randomextensions.dmanning23/1.0.4",
       "files": [
+        "RandomExtensions.dmanning23.1.0.4.nupkg.sha512",
+        "RandomExtensions.dmanning23.nuspec",
         "lib/MonoAndroid10/RandomExtensions.Android.dll",
         "lib/MonoAndroid10/RandomExtensions.Android.pdb",
         "lib/Xamarin.iOS10/RandomExtensions.iOS.dll",
@@ -17908,25 +17986,23 @@
         "lib/net452/RandomExtensions.DesktopGL.dll",
         "lib/net452/RandomExtensions.DesktopGL.pdb",
         "lib/uap10.0/RandomExtensions.WindowsUniversal.dll",
-        "lib/uap10.0/RandomExtensions.WindowsUniversal.pdb",
-        "randomextensions.dmanning23.1.0.3.nupkg.sha512",
-        "randomextensions.dmanning23.nuspec"
+        "lib/uap10.0/RandomExtensions.WindowsUniversal.pdb"
       ]
     },
-    "ResolutionBuddy/1.0.8": {
-      "sha512": "mtvmQJiefh/zbawE/Slvt0ZdZspX/ePZNC7hblwyZdjDNiAPca1B+AIfXWodHkeQ/T8Q1XOYrmxcTYlW6CKP7A==",
+    "ResolutionBuddy/1.0.16": {
+      "sha512": "Ex5gsNHdiH+S4MC95Gr491FOc89C1HoaOVgDsL51uoOihvqCV4N4QrOXC86J2Aw8PqB/ktb8AZ504RRHRor07Q==",
       "type": "package",
-      "path": "resolutionbuddy/1.0.8",
+      "path": "resolutionbuddy/1.0.16",
       "files": [
         "lib/MonoAndroid10/ResolutionBuddy.Android.dll",
         "lib/MonoAndroid10/ResolutionBuddy.Android.pdb",
         "lib/Xamarin.iOS10/ResolutionBuddy.iOS.dll",
         "lib/Xamarin.iOS10/ResolutionBuddy.iOS.pdb",
-        "lib/net451/ResolutionBuddy.DesktopGL.dll",
-        "lib/net451/ResolutionBuddy.DesktopGL.pdb",
+        "lib/net451/ResolutionBuddy.WindowsDX.dll",
+        "lib/net451/ResolutionBuddy.WindowsDX.pdb",
         "lib/uap10.0/ResolutionBuddy.WindowsUniversal.dll",
         "lib/uap10.0/ResolutionBuddy.WindowsUniversal.pdb",
-        "resolutionbuddy.1.0.8.nupkg.sha512",
+        "resolutionbuddy.1.0.16.nupkg.sha512",
         "resolutionbuddy.nuspec"
       ]
     },
@@ -18896,6 +18972,7 @@
     "SharpDX/3.0.0": {
       "sha512": "HjBoC6dxcssXWZvBD0rkRQciXXygaTvjOlfaHb8WWMFNJCZQBWFiTE1sFsoqwQMdSvt0KCko9X/+EvROHR16ng==",
       "type": "package",
+      "path": "sharpdx/3.0.0",
       "files": [
         "SharpDX.3.0.0.nupkg.sha512",
         "SharpDX.nuspec",
@@ -18908,6 +18985,7 @@
     "SharpDX.Direct2D1/3.0.0": {
       "sha512": "eq08/vzV+BSkvVhFa81+eL7xkxZ+ABxJVdcJWv/700475EnpC3Ojb1dsvtTJzIRjOa8tHUgEQliI0hyZCkl5IQ==",
       "type": "package",
+      "path": "sharpdx.direct2d1/3.0.0",
       "files": [
         "SharpDX.Direct2D1.3.0.0.nupkg.sha512",
         "SharpDX.Direct2D1.nuspec",
@@ -18920,6 +18998,7 @@
     "SharpDX.Direct3D11/3.0.0": {
       "sha512": "4WyPEjj7i5eDuWWsxEJ4tACKS9BqiF0OYyUWvh2MRVMgm0eJUYPtwsfKkjCFWqOFlDlkgGj5v5uxFRfBOWPFNw==",
       "type": "package",
+      "path": "sharpdx.direct3d11/3.0.0",
       "files": [
         "SharpDX.Direct3D11.3.0.0.nupkg.sha512",
         "SharpDX.Direct3D11.nuspec",
@@ -18932,6 +19011,7 @@
     "SharpDX.DXGI/3.0.0": {
       "sha512": "m3eXW7hT8OSZCrqqnHofpu6M095omztmberjrtDxuwlerdkGcw43Io13FkgCH6IrahfxDWZXQ3O4RIq+ClCNlA==",
       "type": "package",
+      "path": "sharpdx.dxgi/3.0.0",
       "files": [
         "SharpDX.DXGI.3.0.0.nupkg.sha512",
         "SharpDX.DXGI.nuspec",
@@ -24249,63 +24329,441 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Vector2Extensions/1.0.8": {
-      "sha512": "onWAWTieBsO8JcIph9q3dYEXdKiAynK/VJoMRNRAkFAOL07o855fuED7Z+8KQRJLpuRLwoR/cqPQlzjfn0/P1w==",
+    "Vector2Extensions/1.0.9": {
+      "sha512": "RKDaLC5X1f/H8cIAREUDXX3Ukl9oq7F3DJECUUic7cZiBUep6Pf5Vt5akxepKl4eajXxYAtJeACu+J8qp4nl0w==",
       "type": "package",
-      "path": "vector2extensions/1.0.8",
+      "path": "vector2extensions/1.0.9",
       "files": [
         "lib/MonoAndroid10/Vector2Extensions.Android.dll",
         "lib/MonoAndroid10/Vector2Extensions.Android.pdb",
         "lib/Xamarin.iOS10/Vector2Extensions.iOS.dll",
         "lib/Xamarin.iOS10/Vector2Extensions.iOS.pdb",
-        "lib/net451/Vector2Extensions.DesktopGL.dll",
-        "lib/net451/Vector2Extensions.DesktopGL.pdb",
+        "lib/net451/Vector2Extensions.WindowsDX.dll",
+        "lib/net451/Vector2Extensions.WindowsDX.pdb",
         "lib/uap10.0/Vector2Extensions.WindowsUniversal.dll",
         "lib/uap10.0/Vector2Extensions.WindowsUniversal.pdb",
-        "vector2extensions.1.0.8.nupkg.sha512",
+        "vector2extensions.1.0.9.nupkg.sha512",
         "vector2extensions.nuspec"
       ]
     },
-    "XmlBuddy/1.0.14": {
-      "sha512": "vTbVuI05Vue2IaoHdLbrg51z12MFzVao/ztdYilrWJ14k+pWcJteORiyERfA08ilPG20Y+5oVt18PhZ6TZ81sQ==",
+    "XmlBuddy/1.0.19": {
+      "sha512": "teV2IOcVgm6U0K7pnvZDxp83UEtCYiwaL7Fhzdlf5TMRhJA6TBdNDcLE7HIxKOVYtrnNva6EZ8tbYkWl7pvQLA==",
       "type": "package",
-      "path": "xmlbuddy/1.0.14",
+      "path": "xmlbuddy/1.0.19",
       "files": [
         "content/Content/XmlBuddy.Content.dll",
         "lib/MonoAndroid10/XmlBuddy.Android.dll",
         "lib/MonoAndroid10/XmlBuddy.Android.pdb",
         "lib/Xamarin.iOS10/XmlBuddy.iOS.dll",
         "lib/Xamarin.iOS10/XmlBuddy.iOS.pdb",
-        "lib/net451/XmlBuddy.DesktopGL.dll",
-        "lib/net451/XmlBuddy.DesktopGL.pdb",
+        "lib/net451/XmlBuddy.WindowsDX.dll",
+        "lib/net451/XmlBuddy.WindowsDX.pdb",
         "lib/uap10.0/XmlBuddy.WindowsUniversal.dll",
         "lib/uap10.0/XmlBuddy.WindowsUniversal.pdb",
-        "xmlbuddy.1.0.14.nupkg.sha512",
+        "xmlbuddy.1.0.19.nupkg.sha512",
         "xmlbuddy.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "": [
-      "CameraBuddy >= 1.0.2",
-      "CollisionBuddy >= 1.0.3",
-      "FilenameBuddy >= 1.0.3",
-      "GameTimer >= 1.0.2",
-      "HadoukInput >= 1.0.4",
-      "MatrixExtensions >= 1.0.2",
+      "CameraBuddy >= 1.0.6",
+      "CollisionBuddy >= 1.0.4",
+      "FilenameBuddy >= 1.0.9",
+      "GameTimer >= 1.0.7",
+      "HadoukInput >= 1.0.7",
+      "MatrixExtensions >= 1.0.3",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
-      "MonoGame.Framework.WindowsUniversal >= 3.5.1.1679",
-      "PrimitiveBuddy >= 1.0.3",
-      "RandomExtensions.dmanning23 >= 1.0.3",
-      "ResolutionBuddy >= 1.0.8",
-      "Vector2Extensions >= 1.0.8",
-      "XmlBuddy >= 1.0.14"
+      "MonoGame.Framework.WindowsUniversal >= 3.6.0.1625",
+      "PrimitiveBuddy >= 1.0.4",
+      "RandomExtensions.dmanning23 >= 1.0.4",
+      "ResolutionBuddy >= 1.0.16",
+      "Vector2Extensions >= 1.0.9",
+      "XmlBuddy >= 1.0.19"
     ],
-    "UAP,Version=v10.0": []
+    "UAP,Version=v10.0.10586": []
   },
-  "tools": {},
-  "projectFileToolGroups": {},
   "packageFolders": {
-    "C:\\Users\\Dan\\.nuget\\packages\\": {}
-  }
+    "C:\\Users\\danmanning\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+  },
+  "project": {
+    "restore": {
+      "projectUniqueName": "C:\\Projects\\CameraBuddySample\\CameraBuddySample.WindowsUniversal\\CameraBuddySample.WindowsUniversal.csproj",
+      "projectName": "CameraBuddySample.WindowsUniversal",
+      "projectPath": "C:\\Projects\\CameraBuddySample\\CameraBuddySample.WindowsUniversal\\CameraBuddySample.WindowsUniversal.csproj",
+      "projectJsonPath": "C:\\Projects\\CameraBuddySample\\CameraBuddySample.WindowsUniversal\\project.json",
+      "packagesPath": "C:\\Users\\danmanning\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\CameraBuddySample\\CameraBuddySample.WindowsUniversal\\obj\\",
+      "projectStyle": "ProjectJson",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\danmanning\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Projects\\Nugets": {},
+        "https://api.nuget.org/v3/index.json": {}
+      }
+    },
+    "dependencies": {
+      "CameraBuddy": "[1.0.6, )",
+      "CollisionBuddy": "[1.0.4, )",
+      "FilenameBuddy": "[1.0.9, )",
+      "GameTimer": "[1.0.7, )",
+      "HadoukInput": "[1.0.7, )",
+      "MatrixExtensions": "[1.0.3, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[5.2.2, )",
+      "MonoGame.Framework.WindowsUniversal": "[3.6.0.1625, )",
+      "PrimitiveBuddy": "[1.0.4, )",
+      "RandomExtensions.dmanning23": "[1.0.4, )",
+      "ResolutionBuddy": "[1.0.16, )",
+      "Vector2Extensions": "[1.0.9, )",
+      "XmlBuddy": "[1.0.19, )"
+    },
+    "frameworks": {
+      "uap10.0.10586": {}
+    },
+    "runtimes": {
+      "win10-arm": {
+        "#import": []
+      },
+      "win10-arm-aot": {
+        "#import": []
+      },
+      "win10-x64": {
+        "#import": []
+      },
+      "win10-x64-aot": {
+        "#import": []
+      },
+      "win10-x86": {
+        "#import": []
+      },
+      "win10-x86-aot": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Net.NameResolution from 4.3.0 to 4.0.0. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.Sockets 4.1.0 -> runtime.win.System.Net.Sockets 4.3.0 -> System.Net.NameResolution (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.NameResolution (>= 4.0.0)",
+      "libraryId": "System.Net.NameResolution",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Net.Primitives from 4.3.0 to 4.0.11. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.Sockets 4.1.0 -> runtime.win.System.Net.Sockets 4.3.0 -> System.Net.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.Sockets 4.1.0 -> System.Net.Primitives (>= 4.0.11)",
+      "libraryId": "System.Net.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Microsoft.Win32.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.NETCore 5.0.2 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> Microsoft.Win32.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.Win32.Primitives (>= 4.0.1)",
+      "libraryId": "Microsoft.Win32.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Microsoft.Win32.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.NameResolution 4.0.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> Microsoft.Win32.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.Win32.Primitives (>= 4.0.1)",
+      "libraryId": "Microsoft.Win32.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Microsoft.Win32.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.Requests 4.0.11 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> Microsoft.Win32.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.Win32.Primitives (>= 4.0.1)",
+      "libraryId": "Microsoft.Win32.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Microsoft.Win32.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.Sockets 4.1.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> Microsoft.Win32.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.Win32.Primitives (>= 4.0.1)",
+      "libraryId": "Microsoft.Win32.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Microsoft.Win32.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.WebSockets.Client 4.0.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> Microsoft.Win32.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.Win32.Primitives (>= 4.0.1)",
+      "libraryId": "Microsoft.Win32.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Microsoft.Win32.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.ServiceModel.Http 4.1.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> Microsoft.Win32.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.Win32.Primitives (>= 4.0.1)",
+      "libraryId": "Microsoft.Win32.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Microsoft.Win32.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.ServiceModel.NetTcp 4.1.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> Microsoft.Win32.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.Win32.Primitives (>= 4.0.1)",
+      "libraryId": "Microsoft.Win32.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Microsoft.Win32.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.ServiceModel.Primitives 4.1.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> Microsoft.Win32.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.Win32.Primitives (>= 4.0.1)",
+      "libraryId": "Microsoft.Win32.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Microsoft.Win32.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.Http.Rtc 4.0.1 -> System.Net.Http 4.1.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> Microsoft.Win32.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.Win32.Primitives (>= 4.0.1)",
+      "libraryId": "Microsoft.Win32.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Microsoft.Win32.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.ServiceModel.Duplex 4.0.1 -> System.Private.ServiceModel 4.1.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> Microsoft.Win32.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.Win32.Primitives (>= 4.0.1)",
+      "libraryId": "Microsoft.Win32.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Microsoft.Win32.Primitives from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.ServiceModel.Security 4.0.1 -> System.Private.ServiceModel 4.1.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> Microsoft.Win32.Primitives (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> Microsoft.Win32.Primitives (>= 4.0.1)",
+      "libraryId": "Microsoft.Win32.Primitives",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm",
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Contracts from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.NameResolution 4.0.0 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions 4.3.0 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Contracts (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Diagnostics.Contracts (>= 4.0.1)",
+      "libraryId": "System.Diagnostics.Contracts",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Contracts from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.WebSockets.Client 4.0.0 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions 4.3.0 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Contracts (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Diagnostics.Contracts (>= 4.0.1)",
+      "libraryId": "System.Diagnostics.Contracts",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Contracts from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.Http.Rtc 4.0.1 -> System.Net.Http 4.1.0 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions 4.3.0 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Contracts (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Diagnostics.Contracts (>= 4.0.1)",
+      "libraryId": "System.Diagnostics.Contracts",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Contracts from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.Sockets 4.1.0 -> runtime.win.System.Net.Sockets 4.3.0 -> System.Diagnostics.Tracing 4.3.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions 4.3.0 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Contracts (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Diagnostics.Contracts (>= 4.0.1)",
+      "libraryId": "System.Diagnostics.Contracts",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Contracts from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.Requests 4.0.11 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> System.Diagnostics.Tracing 4.3.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions 4.3.0 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Contracts (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Diagnostics.Contracts (>= 4.0.1)",
+      "libraryId": "System.Diagnostics.Contracts",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Contracts from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Net.Sockets 4.1.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> System.Diagnostics.Tracing 4.3.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions 4.3.0 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Contracts (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Diagnostics.Contracts (>= 4.0.1)",
+      "libraryId": "System.Diagnostics.Contracts",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Contracts from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.ServiceModel.Http 4.1.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> System.Diagnostics.Tracing 4.3.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions 4.3.0 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Contracts (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Diagnostics.Contracts (>= 4.0.1)",
+      "libraryId": "System.Diagnostics.Contracts",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Contracts from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.ServiceModel.NetTcp 4.1.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> System.Diagnostics.Tracing 4.3.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions 4.3.0 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Contracts (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Diagnostics.Contracts (>= 4.0.1)",
+      "libraryId": "System.Diagnostics.Contracts",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Contracts from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.ServiceModel.Primitives 4.1.0 -> System.Net.Primitives 4.0.11 -> runtime.win.System.Net.Primitives 4.3.0 -> System.Diagnostics.Tracing 4.3.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions 4.3.0 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Contracts (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Diagnostics.Contracts (>= 4.0.1)",
+      "libraryId": "System.Diagnostics.Contracts",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: System.Diagnostics.Contracts from 4.3.0 to 4.0.1. Reference the package directly from the project to select a different version. \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.ServiceModel.Primitives 4.1.0 -> System.Security.Cryptography.X509Certificates 4.1.0 -> System.Security.Cryptography.Encoding 4.0.0 -> System.Collections.Concurrent 4.0.12 -> System.Diagnostics.Tracing 4.1.0 -> runtime.aot.System.Diagnostics.Tracing 4.3.0 -> System.Reflection.Extensions 4.3.0 -> runtime.aot.System.Reflection.Extensions 4.3.0 -> System.Reflection.TypeExtensions 4.3.0 -> System.Diagnostics.Contracts (>= 4.3.0) \r\n CameraBuddySample.WindowsUniversal -> Microsoft.NETCore.UniversalWindowsPlatform 5.2.2 -> System.Diagnostics.Contracts (>= 4.0.1)",
+      "libraryId": "System.Diagnostics.Contracts",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10586/win10-arm-aot",
+        "UAP,Version=v10.0.10586/win10-x64-aot",
+        "UAP,Version=v10.0.10586/win10-x86-aot"
+      ]
+    }
+  ]
 }

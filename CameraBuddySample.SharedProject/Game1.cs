@@ -1,13 +1,12 @@
-using System;
+using CameraBuddy;
+using CollisionBuddy;
+using GameTimer;
+using HadoukInput;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.Input;
-using CameraBuddy;
-using GameTimer;
-using CollisionBuddy;
-using HadoukInput;
 using PrimitiveBuddy;
+using ResolutionBuddy;
 
 namespace CameraBuddySample
 {
@@ -45,6 +44,8 @@ namespace CameraBuddySample
 			Content.RootDirectory = "Content";
 			graphics.IsFullScreen = false;
 
+			var resolution = new ResolutionComponent(this, graphics, new Point(1280, 720), new Point(1280, 720), false, true);
+
 			_circle1 = new Circle();
 			_circle2 = new Circle();
 
@@ -55,6 +56,7 @@ namespace CameraBuddySample
 
 			//set up the camera
 			_camera = new Camera();
+			_camera.TopPadding = 0.2f;
 			_camera.WorldBoundary = new Rectangle(-2000, -1000, 4000, 2000);
 		}
 
@@ -68,7 +70,7 @@ namespace CameraBuddySample
 		{
 			//init the blue circle so it will be on the left of the screen
 			_circle1.Initialize(new Vector2(graphics.GraphicsDevice.Viewport.TitleSafeArea.Center.X - 80,
-			                                graphics.GraphicsDevice.Viewport.TitleSafeArea.Center.Y), 80.0f);
+											graphics.GraphicsDevice.Viewport.TitleSafeArea.Center.Y), 80.0f);
 
 			//put the red circle on the right of the screen
 			_circle2.Initialize(graphics.GraphicsDevice.Viewport.TitleSafeArea.Center, 80.0f);
@@ -99,10 +101,12 @@ namespace CameraBuddySample
 		protected override void Update(GameTime gameTime)
 		{
 			// Allows the game to exit
-			if ((GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed) || 
-			    Keyboard.GetState().IsKeyDown(Keys.Escape))
+			if ((GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed) ||
+				Keyboard.GetState().IsKeyDown(Keys.Escape))
 			{
+#if !__IOS__
 				this.Exit();
+#endif
 			}
 
 			//update the timer
@@ -156,8 +160,8 @@ namespace CameraBuddySample
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 
 			//Add all our points to the camera
-			_camera.AddPoint(_circle1.Pos);
-			_camera.AddPoint(_circle2.Pos);
+			AddCircleToCamera(_circle1);
+			AddCircleToCamera(_circle2);
 
 			//update all the matrices of the camera before we start drawing
 			_camera.BeginScene(false);
@@ -178,6 +182,14 @@ namespace CameraBuddySample
 			spriteBatch.End();
 
 			base.Draw(gameTime);
+		}
+
+		private void AddCircleToCamera(Circle circle)
+		{
+			_camera.AddPoint(circle.Pos + new Vector2(-circle.Radius, 0));
+			_camera.AddPoint(circle.Pos + new Vector2(circle.Radius, 0f));
+			_camera.AddPoint(circle.Pos + new Vector2(0, -circle.Radius));
+			_camera.AddPoint(circle.Pos + new Vector2(0, circle.Radius));
 		}
 
 		#endregion //Members
