@@ -1,4 +1,5 @@
 CameraBuddySample
 =================
 
-This thing shows how to use the CameraBuddy system.
+This project has been moved to:
+https://github.com/dmanning23/CameraBuddy/tree/master/Example
